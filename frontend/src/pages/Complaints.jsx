@@ -21,7 +21,7 @@ const Complaints = () => {
     }
 
     return (
-        <div className='flex flex-wrap gap-4'>
+        <div className='flex flex-wrap gap-4 ml-52 my-12'>
             {
                 data.map((item, index) => {
                     return (

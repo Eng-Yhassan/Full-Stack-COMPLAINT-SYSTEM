@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import Swal from 'sweetalert2'
 const CreateComplaints = () => {
     const [open, setOpen] = useState(false);
 
@@ -11,7 +11,7 @@ const CreateComplaints = () => {
     const [body, setBody] = useState("")
 
 
-    const navigate = useNavigate()
+  
 
     const handleIsOpne = () => {
         setOpen(true)
@@ -27,8 +27,13 @@ const CreateComplaints = () => {
             "email":email,
             "body":body
         }).then(() => {
-           alert('You sended we will contact you ')
-           navigate("/dashboard")
+          Swal.fire({
+            icon:"success",
+            title:"Success",
+            text:"Mahadsanid",
+            confirmButtonText:"ok"
+          })
+           
         })
     }
 

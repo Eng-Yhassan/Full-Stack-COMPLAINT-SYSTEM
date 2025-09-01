@@ -13,7 +13,7 @@ const LeftDash = () => {
     return (
         <div style={{
             width: open === true ? "90px" : ""
-        }} className='bg-yellow-300 h-[1210px] w-[190px] '>
+        }} className='bg-yellow-300 h-[1210px] w-[190px] fixed '>
             <div className='flex justify-end items-center px-4 text-3xl py-2'>
                 <i
                     style={{
